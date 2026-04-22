@@ -1,0 +1,168 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 350px;
+    background-color: #047857;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+    header h1 {
+        font-family: "Merriweather", serif;
+        color: white;
+        text-align: center;
+    }
+
+h1, h2, h3 {
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: #047857;
+}
+
+.navigation {
+    padding-inline-start: 0px;
+    text-align: center;
+    list-style-type: none;
+}
+
+    .navigation li {
+        display: inline-block;
+        padding: 10px;
+        margin: 0 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+main.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.subtitle {
+    font-size: 18px;
+    text-align: center;
+}
+
+.components-table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .components-table th, .components-table td {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    .components-table tr:nth-child(even) {
+        background-color: #ECFDF5;
+    }
+
+.image-container {
+    text-align: center;
+}
+
+    .image-container img {
+        max-width: 100%;
+        border: 1px solid #047857;
+    }
+
+.general-comp-list, .spec-comp-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.team-member {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #047857;
+    }
+
+.form-container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #047857;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input[type="email"], .form-group input[type="number"] {
+        width: 100%;
+        padding: 8px;
+    }
+
+footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .team-member {
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+    }
+}
+iframe {
+    width: 100%;
+    max-width: 850px;
+    height: 500px;
+    border: 2px solid #047857;
+    border-radius: 8px;
+    margin: 20px auto;
+    display: block;
+    background-color: #f9f9f9;
+}
